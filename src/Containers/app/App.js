@@ -1,4 +1,4 @@
-import Buy from '../Page/Buy';
+import Facture from '../Page/Facture/Facture';
 import './App.css';
 // import Home from '../Page/Home/Home';
 // import Header from '../../Components/Header';
@@ -6,9 +6,10 @@ import './App.css';
 function App() {
   return (
     <div>
+
       {/* <Home/> */}
       {/* <Header/> */}
-      <Buy/>
+        <Facture/>
     </div>
   );
 }
