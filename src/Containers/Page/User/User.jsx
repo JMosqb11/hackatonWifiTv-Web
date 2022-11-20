@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './User.css';
 import axios from 'axios';
+import { NavLink } from 'react-router-dom';
 
 const User = () => {
 
@@ -14,8 +15,8 @@ const User = () => {
   const [address, setAddress] = useState("");
 
   const addUser = async (newUser) =>{
-
-    let headersList = {
+        try {
+          let headersList = {
       Accept: "*/*",
       "User-Agent": "Thunder Client (https://www.thunderclient.com)",
       "Content-Type": "application/json",
@@ -33,28 +34,45 @@ const User = () => {
 
     let response = await axios.request(reqOptions);
     return response;
+        } catch (error) {
+          throw error
+        }
+
+    
 
 
   };
 
-  const sendInformation = async (e) => {
 
+  const sendInformation = async (e) => {
+      
+    try {
       e.preventDefault();
-      const newInfo = { name, lastName, typeId, id, email, password, rol, address };
+      const newInfo = { name, lastName, typeId, id, email, password, role: "CLIENT_ROLE", address };
       const response = await addUser(newInfo);
-  
+
+      
       if (!response.status) {
         return;
       }
 
-      setName("");
-      setLastName("");
-      setId("");
-      setTypeId("");
-      setEmail("");
-      setPasword("");
-      setRol("");
-      setAddress("");
+
+
+      setName(" ");
+      setLastName(" ");
+      setId(" ");
+      setTypeId(" ");
+      setEmail(" ");
+      setPasword(" ");
+      setRol(" ");
+      setAddress(" ");
+      alert('Se guardaron tus datos')
+
+    } catch (error) {
+      console.log('ocurrio un error')
+    }
+
+
   };
  
 
@@ -76,9 +94,9 @@ const User = () => {
                 <div>
                   <select name="TypeDocument" id="" value={typeId} onChange={(e) => setTypeId(e.target.value)}>
                     <option value="type">Tipo de Documento</option>
-                    <option value="CC">Cedula de ciudadania</option>
-                    <option value="CE">Cedula de extrangeria</option>
-                    <option value="PT">Pasaporte</option>
+                    <option value="C.C">Cedula de ciudadania</option>
+                    <option value="C.E">Cedula de extrangeria</option>
+                    <option value="T.E">Pasaporte</option>
                   </select>
                 </div>
 
@@ -92,7 +110,7 @@ const User = () => {
 
             <div className='usuar'>
               
-                <select name="rol" id="" value={rol} disabled onChange={(e) => setRol(e.target.value)}>
+                <select name="rol" id="" value={rol} readOnly={true} onChange={(e) => setRol(e.target.value)}>
                   <option value="rol">Cliente</option>
                 </select>
 
@@ -100,7 +118,7 @@ const User = () => {
             </div>
 
             <div className='containerBtn'>
-              <button type="submit" className='btn'> Send </button>
+              <NavLink to="/Buy" type="submit" className='btn'> Send </NavLink>
             </div>
 
           </form>
