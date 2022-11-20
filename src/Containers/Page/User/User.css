@@ -1,0 +1,82 @@
+.containerGeneral{
+    display: flex;
+    align-items: center;
+}
+
+.imageFondo{
+    width: 50%;
+    height: 100vh;
+    background-image: url('../../../Assets/image/milad-shams-ALv_irTjYao-unsplash.jpg');
+    background-size: cover; 
+}
+
+.InputsSection{
+    width: 50%;
+    height: 100vh;
+}
+
+.personalName{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    top: 48px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+}
+
+input::placeholder{
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+select{
+    width: 300px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.DocumentPersonal{
+    display: flex;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+
+.personalHome{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    top: 110px;
+}
+
+.usuar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    top: 170px;
+}
+
+.containerBtn{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+    top: 300px;
+}
+
+.btn{
+    width: 300px;
+    height: 40px;
+    background-color: #53CCEB;
+    border: none;
+    font-weight: bold;
+}
