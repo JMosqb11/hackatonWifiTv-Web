@@ -50,7 +50,7 @@ body {
 
 .tarjeta .delantera {
 	width: 100%;
-	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+	/* background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg); */
 	background-size: cover;
 }
 
@@ -94,7 +94,7 @@ body {
 
 /* ---------- Tarjeta Trasera ----------*/
 .trasera {
-	background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg);
+	/* background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg); */
 	background-size: cover;
 	position: absolute;
 	top: 0;
@@ -193,17 +193,12 @@ body {
 	background: #fff;
 	width: 100%;
 	max-width: 700px;
-	padding: 150px 30px 30px 30px;
+	padding: 3rem;
 	border-radius: 10px;
-	position: relative;
-	top: -150px;
-	z-index: 1;
-	clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-	transition: clip-path .3s ease-out;
 }
 
-.formulario-tarjeta.active {
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+.formulario-tarjeta h1 {
+	text-align: center;
 }
 
 .formulario-tarjeta label {
