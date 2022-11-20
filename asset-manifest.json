@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/hackatonwifiTv/static/css/main.b3cc4d05.css",
+    "main.js": "/hackatonwifiTv/static/js/main.92e9def4.js",
+    "static/media/scott-elkins-CmOIh6MuKJI-unsplash.jpg": "/hackatonwifiTv/static/media/scott-elkins-CmOIh6MuKJI-unsplash.487c3bc244f8a23f5ed0.jpg",
+    "static/media/milad-shams-ALv_irTjYao-unsplash.jpg": "/hackatonwifiTv/static/media/milad-shams-ALv_irTjYao-unsplash.cf4db2962818e1f96f54.jpg",
+    "index.html": "/hackatonwifiTv/index.html",
+    "main.b3cc4d05.css.map": "/hackatonwifiTv/static/css/main.b3cc4d05.css.map",
+    "main.92e9def4.js.map": "/hackatonwifiTv/static/js/main.92e9def4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3cc4d05.css",
+    "static/js/main.92e9def4.js"
+  ]
+}
