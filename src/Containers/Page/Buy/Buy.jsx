@@ -92,7 +92,7 @@ const Buy = () => {
         
           <div className='container-resumen-pedido'>
             
-          
+          <button>Enviar</button>
 
           </div>
 
